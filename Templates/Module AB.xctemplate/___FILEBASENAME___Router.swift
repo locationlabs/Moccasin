@@ -4,7 +4,7 @@ import Cobra
 
 final class ___FILEBASENAME___Router {
     
-    weak var controller: UIViewController!
+    weak var controller: UIViewController?
     
     init(controller: UIViewController) {
         self.controller = controller
