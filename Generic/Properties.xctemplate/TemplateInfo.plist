@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Description</key>
+	<string>A properties file that can be loaded into a VIPER application or framework</string>
+	<key>Summary</key>
+	<string>An empty document</string>
+	<key>Kind</key>
+	<string>Xcode.IDEFoundation.TextSubstitutionFileTemplateKind</string>
+	<key>Name</key>
+	<string>Properties</string>
+	<key>MainTemplateFile</key>
+	<string>___FILENAME___.json</string>
+	<key>DefaultCompletionName</key>
+	<string>properties</string>
+	<key>SortOrder</key>
+	<integer>92</integer>
+   <key>Platforms</key>
+   <array>
+      <string>com.apple.platform.iphoneos</string>
+   </array>
+</dict>
+</plist>

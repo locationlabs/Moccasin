@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+   <key>AllowedTypes</key>
+   <array>
+      <string>public.swift-source</string>
+   </array>
+   <key>Description</key>
+   <string>A VIPER daemon can register themselves to handle different events that happen at the application level and VIPER will delegate to each daemon when the event occurs</string>
+   <key>Kind</key>
+   <string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+   <key>MainTemplateFile</key>
+   <string>___FILEBASENAME___.swift</string>
+   <key>Options</key>
+   <array>
+      <dict>
+         <key>Description</key>
+         <string>Daemon name</string>
+         <key>Identifier</key>
+         <string>moduleName</string>
+         <key>Name</key>
+         <string>Daemon name</string>
+         <key>NotPersisted</key>
+         <true/>
+         <key>Required</key>
+         <true/>
+         <key>Type</key>
+         <string>text</string>
+      </dict>
+      <dict>
+          <key>Identifier</key>
+          <string>singletonStyle</string>
+          <key>Name</key>
+          <string>Style</string>
+          <key>Description</key>
+          <string>The style of Singleton to create.</string>
+          <key>Type</key>
+          <string>popup</string>
+          <key>Default</key>
+          <string>Application</string>
+          <key>Values</key>
+          <array>
+              <string>Application</string>
+              <string>Device</string>
+              <string>Local Notification</string>
+              <string>Local Action Notification</string>
+              <string>Notification Center</string>
+              <string>Remote Notification</string>
+              <string>Tweaks</string>
+              <string>Url</string>
+          </array>
+      </dict>
+      <dict>
+         <key>Default</key>
+         <string>___VARIABLE_moduleName___</string>
+         <key>Identifier</key>
+         <string>productName</string>
+         <key>Type</key>
+         <string>static</string>
+      </dict>
+   </array>
+   <key>Platforms</key>
+   <array>
+      <string>com.apple.platform.iphoneos</string>
+   </array>
+   <key>SortOrder</key>
+   <integer>97</integer>
+</dict>
+</plist>

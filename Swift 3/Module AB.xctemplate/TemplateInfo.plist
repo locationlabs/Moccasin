@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+   <key>Description</key>
+   <string>An A/B VIPER module can be used to A/B test an existing VIPER feature</string>
+   <key>Kind</key>
+   <string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+   <key>Options</key>
+   <array>
+      <dict>
+         <key>Description</key>
+         <string>VIPER module name</string>
+         <key>Identifier</key>
+         <string>moduleName</string>
+         <key>Name</key>
+         <string>Module name</string>
+         <key>NotPersisted</key>
+         <true/>
+         <key>Required</key>
+         <true/>
+         <key>Type</key>
+         <string>text</string>
+      </dict>
+      <dict>
+         <key>Description</key>
+         <string>Feature that this VIPER module can A/B test</string>
+         <key>Identifier</key>
+         <string>featureName</string>
+         <key>Name</key>
+         <string>A/B feature name</string>
+         <key>NotPersisted</key>
+         <true/>
+         <key>Required</key>
+         <true/>
+         <key>Type</key>
+         <string>text</string>
+      </dict>
+      <dict>
+         <key>Default</key>
+         <string>___VARIABLE_moduleName___</string>
+         <key>Identifier</key>
+         <string>productName</string>
+         <key>Type</key>
+         <string>static</string>
+      </dict>
+   </array>
+   <key>Platforms</key>
+   <array>
+      <string>com.apple.platform.iphoneos</string>
+   </array>
+   <key>SortOrder</key>
+   <integer>99</integer>
+</dict>
+</plist>
